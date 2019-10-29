@@ -1,14 +1,16 @@
 import React from 'react'
+import { Route, Switch, BrowserRouter } from "react-router-dom"
+
 import LocalBoardContainer from "./LocalBoardContainer"
 
 export const App = (props) => {
 
   return (
-    <div>
-      <div id="board2">
-        <LocalBoardContainer />
-      </div>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/local" component={LocalBoardContainer}/>
+      </Switch>
+    </BrowserRouter>
   )
 }
 
