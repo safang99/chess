@@ -2,7 +2,6 @@ import React from 'react';
 import Chess from 'chess.js'
 
 const LocalBoardContainer = (props) => {
-
   $(function() {
   let cfg = {
     pieceTheme: 'https://koblenski.github.io/javascript/chessboardjs-0.3.0/img/chesspieces/wikipedia/{piece}.png',
